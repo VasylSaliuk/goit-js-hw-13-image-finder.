@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>JS - Module 13</title>
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+  </head>
+
+  <body>
+    <!-- Search container -->
+    <header class="search-bar">
+      <form class="search-form" id="search-form">
+        <input
+          type="text"
+          name="query"
+          autocomplete="off"
+          placeholder="Search images..."
+        />
+      </form>
+    </header>
+
+    <!-- Gallery container where all the gallery items will be rendered -->
+    <ul class="gallery"></ul>
+
+    <!-- Load more button -->
+    <button type="button" class="load-more-button" data-action="load-more">
+      <span class="button-label">Load more</span>
+    </button>
+
+    <!-- Lightbox Modal -->
+    <div class="lightbox js-lightbox">
+      <div class="lightbox__overlay">
+        <div class="lightbox__content">
+          <img class="lightbox__image" src="#" alt="picture" />
+        </div>
+
+        <button
+          type="button"
+          class="lightbox__button"
+          data-action="close-lightbox"
+        ></button>
+      </div>
+    </div>
+  </body>
+</html>
